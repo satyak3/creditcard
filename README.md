@@ -609,7 +609,7 @@ sns.countplot(x=df.Class, hue=df.Class)
 
 
 
-![png] (/graph/output_13_1.png)
+![png] (/graphs/output_13_1.png)
 
 
 By looking at the above statistics, we can see that the data is highly imbalanced. Only 492 out of 284807 are fraud.
@@ -630,7 +630,7 @@ sns.distplot(df.Amount)
 
 
 
-![png](/graph/output_16_1.png)
+![png](/graphs/output_16_1.png)
 
 
 Since, it is a little difficult to see. Let's engineer a new feature of bins.
@@ -768,7 +768,7 @@ plt.xticks(rotation=45)
 
 
 
-![png](/graph/output_26_1.png)
+![png](/graphs/output_26_1.png)
 
 
 Since, count of values of Bins other than '0 to 2854' are difficult to view. Let's not insert the first one.
@@ -788,7 +788,7 @@ plt.xticks(rotation=45)
 
 
 
-![png](/graph/output_28_1.png)
+![png](/graphs/output_28_1.png)
 
 
 We can see that mostly the amount is between 0 and 2854 euros. 
@@ -1157,7 +1157,7 @@ sns.heatmap(conf_matrix, annot=True)
 
 
 
-![png](/graph/output_52_1.png)
+![png](/graphs/output_52_1.png)
 
 
 Heatmap also suggests that the data is highly imbalanced.
@@ -1334,7 +1334,7 @@ plot_roc_curve(fpr=fpr, tpr=tpr, label="AUC = %.3f" % lr_auc)
 ```
 
 
-![png](/graph/output_82_0.png)      `   `
+![png](/graphs/output_82_0.png)      `   `
 
 
 AUC is quite good. i.e. 0.965. Based on the data being highly imbalanced, we'll only check the AUC metric in later algorithms.
@@ -1387,7 +1387,7 @@ plot_roc_curve(fpr=fpr_poly, tpr=tpr_poly, label='AUC = %.3f' %  roc_auc_score(y
 ```
 
 
-![png](/graph/output_90_0.png)
+![png](/graphs/output_90_0.png)
 
 
 First degree is better in Logistic Regression case which gives 0.965 AUC Score.
@@ -1874,7 +1874,7 @@ plot_roc_curve(fpr, tpr, 'AUC: %.3f' % svc_auc)
 ```
 
 
-![png](output_116_0.png)
+![png](/graphs/output_116_0.png)
 
 
 The score AUC Score SVC gave is also pretty great. But it's still less than Logistic Regression Model. But the Recall increased significantly.
@@ -2015,7 +2015,7 @@ plot_roc_curve(fpr, tpr, 'AUC = %.3f' % svc_rbf_auc)
 ```
 
 
-![png](/graph/output_136_0.png)
+![png](/graphs/output_136_0.png)
 
 
 Now, for kernel sigmoid.
@@ -2103,7 +2103,7 @@ plot_roc_curve(fpr, tpr, 'AUC = %.3f' % svc_sigmoid_auc)
 ```
 
 
-![png](/graph/output_146_0.png)
+![png](/graphs/output_146_0.png)
 
 
 Let's check for Linear kernel.
@@ -2167,7 +2167,7 @@ plot_roc_curve(fpr, tpr, 'AUC = %.3f' % svc_linear_auc)
 ```
 
 
-![png](/graph/output_154_0.png)
+![png](/graphs/output_154_0.png)
 
 
 Let's check the recall too.
@@ -2233,7 +2233,7 @@ plot_roc_curve(fpr, tpr, 'AUC = %.3f' % nb_auc)
 ```
 
 
-![png](/graph/output_166_0.png)
+![png](/graphs/output_166_0.png)
 
 
 
